@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="" href="styleIndex.css" />
+
+    	<title>Formulário de Briefing</title>
+
+		<script>
+			function validarEmail() {
+				var email = document.getElementById("email").value;
+				var errorMessage = document.getElementById("error-message");
+				var emailField = document.getElementById("email");
+	
+				if (email === "") {
+					errorMessage.style.display = "block"; // Exibe a mensagem de erro
+					emailField.classList.add("error-border"); // Adiciona a borda vermelha
+	
+					return false; // Impede o envio do formulário se o campo estiver vazio
+				} else {
+					errorMessage.style.display = "none"; // Esconde a mensagem de erro
+					emailField.classList.remove("error-border"); // Remove a borda vermelha
+	
+					return true; // Permite o envio do formulário se o campo estiver preenchido
+				}
+			}
+	
+			function enviarFormulario() {
+				if (validarEmail()) {
+					document.envio.submit(); // Envia o formulário se o e-mail estiver preenchido
+				} else {
+					return false; // Impede o envio do formulário se o campo estiver vazio
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+			
+		<img src="./img/banner.png" alt="bannerBrz">
+
+		<div class="box">  
+			
+			<div>
+
+				<h1>FORMULÁRIO DE "BRIEFING" </h1>
+
+				<h2>SOLICITAÇÕES DE SERVIÇO AO MARKETING</h2>
+
+				<p>
+					Nosso objetivo é transformar este formulário digital em uma ferramenta de impacto! Afinal, a solicitação de serviços ao time de marketing é o ponto de partida para transformar ideias em realidade e também em resultados. 
+				</p>
+				<p>
+					Imagine-o como um "guia" — que nos conduz ao sucesso. Quanto mais detalhes você compartilha com a gente, mais afiadas serão nossas estratégias, tanto para nossos parceiros internos, como para os externos. Lembre-se, com antecedência, construímos o caminho com foco no sucesso, profissionalismo e sempre buscando a excelência. Preencha minuciosamente, e juntos embarcaremos em diversas jornadas de sucesso! 
+				</p>
+
+				<div class="error-message" id="error-message">Por favor, preencha o campo de e-mail.</div>
+				
+				<div class="email">
+					<form name="envio" action="email.php" method="post">
+						<label class="email" for="email">Informe seu Email: *</label>
+                        <input name="email" type="email" class="emailForm" id="email" placeholder="Sua resposta" required>
+					</form>
+				</div>
+
+			</div>
+			<button class="button" type="button" onclick="enviarFormulario()">Próximo</button>
+		</div>
+	</body>
+</html>

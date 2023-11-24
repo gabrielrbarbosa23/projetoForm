@@ -1,0 +1,207 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(191, 193, 194), rgb(84, 92, 95));
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+h5{
+    margin-top: 0.5px;
+    font-weight: normal;
+    text-decoration: underline;
+    color: rgb(84, 92, 95);
+    cursor: default;
+}
+
+.inputCheckbox{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.box{
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.inputUser{
+    margin-top: 1rem;
+    color: black;
+    background: rgb(219, 222, 223);
+    border: 0.125rem solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+.inputUser:hover,
+.inputUser:focus {
+  outline: none;
+  border-color: rgb(84, 92, 95);
+}
+
+.inputCheckbox 
+.checkOutros,
+.checkOutrosServ {
+    color: black;
+    background: rgb(219, 222, 223);
+    border: 0.125rem solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.inputCheckbox .checkOutros:hover,
+.inputCheckbox .checkOutros:focus {
+  outline: none;
+  border-color: rgb(84, 92, 95);
+}
+
+.inputCheckbox .checkOutrosServ:hover,
+.inputCheckbox .checkOutrosServ:focus {
+  outline: none;
+  border-color: rgb(84, 92, 95);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.refLabel {
+    padding: 10px 5px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(219, 222, 223);
+}
+
+.refLabel:hover {
+    color: black;
+    background-color: rgb(219, 222, 223);
+}
+
+select{
+    color: black;
+    background: rgb(219, 222, 223);
+    border: 0.125rem solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+select:hover,
+select:focus {
+  outline: none;
+  border-color: rgb(84, 92, 95);
+}
+
+.submit{
+    background-color: rgb(84, 92, 95);
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: rgb(65, 72, 75);
+}
+
+.back {
+    background-color: rgb(219, 222, 223);
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: rgb(192, 196, 197);
+}
+
+.resetForm {
+    background-color: rgb(84, 92, 95);
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    margin-left: 340px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resetForm:hover {
+    background-color: rgb(65, 72, 75);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(74, 81, 83);
+    text-decoration: none;
+    border-radius: 50px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}

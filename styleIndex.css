@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(191, 193, 194), rgb(84, 92, 95));
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    padding: 15px;
+    border-radius: 15px;
+    width: 45%;
+    color: black;
+    background-color: white;
+}
+
+img{
+    width: 47.3%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-weight: normal;
+}
+
+.email{
+    margin-bottom: 1rem;
+}
+
+.emailForm{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: black;
+    background: rgb(219, 222, 223);
+    border: 0.125rem solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+.emailForm:hover,
+.emailForm:focus {
+  outline: none;
+  border-color: rgb(84, 92, 95);
+}
+
+.button{
+    background-color: rgb(84, 92, 95);
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: rgb(65, 72, 75);
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Alinhar conteúdo no topo */
+    }
+
+    .box {
+        width: 92%; 
+        margin-top: 10px; 
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0.5rem; 
+    }
+
+    .emailForm {
+        width: 92%; 
+        font-size: 14px;
+    }
+}
