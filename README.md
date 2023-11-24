@@ -1,5 +1,5 @@
 # projetoForm
-Formulário em que envia as informações para o email e para o trello utilizando PHPMailer.
+Este formulário envia as informações para o email e para o trello utilizando PHPMailer.
 
 
 ![index](https://github.com/gabrielrbarbosa23/projetoForm/assets/110126012/bba50760-fdbb-4f5d-a978-4cfc6abc6e4f)
